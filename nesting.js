@@ -37,7 +37,16 @@ var employees = [{
 //  3. Return the updated employee array.
 
 // Code here
-
+function employeeUpdater(){
+  for(var prop in employees){
+    if(employees[prop]["firstName"] = "Theo"){
+      delete employees[prop];
+    } else if (employees[prop]["firstName"] = "Lorie"){
+      employees[prop].department = "HR";
+    }
+  }
+  return employees;
+}
 
 
 
@@ -55,7 +64,13 @@ var employees = [{
 var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 
 // Code here
+function removeDuplicates(workplaceAccidents){
+  for(var i = 0; i < workplaceAccidents.length; i++){
+    for(var j = 0; j < workplaceAccidents[i].length; j++){
 
+    }
+  }
+}
 
 
 
@@ -84,8 +99,9 @@ var cat = {
 
 // Code here
 
-var grumpyActivity;
-var fluffy2ndFriend;
+
+var grumpyActivity = cat.catFriends[0].activities;
+var fluffy2ndFriend = cat.catFriends[1].name;
 
 
 
@@ -123,7 +139,13 @@ var myCar = {
 }
 
 // Code here
-
+function recordCleaner(myCar){
+  for(prop in myCar){
+    if (myCar[prop] === accidents){
+      
+    }
+  }
+}
 
 
 
