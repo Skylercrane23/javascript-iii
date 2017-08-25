@@ -42,7 +42,7 @@ function employeeUpdater(){
     if(employees[prop]["firstName"] = "Theo"){
       delete employees[prop];
     } else if (employees[prop]["firstName"] = "Lorie"){
-      employees[prop].department = "HR";
+      employees[prop]["department"] = "HR";
     }
   }
   return employees;

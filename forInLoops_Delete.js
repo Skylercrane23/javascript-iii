@@ -33,6 +33,11 @@
 
 function showValues( obj ) {
   // CODE HERE
+  var newArray = [];
+  for (prop in obj){
+    var newArray = newArray.concat(obj[prop]);
+  }
+  return newArray.join("");
 }
 
 
@@ -42,7 +47,14 @@ function showValues( obj ) {
 // Write a function called greaterThan10 that takes in an object. Write a for in loop that loops over the object and changes any value that is great than 10 to 0. Return the updated object.
 
 // CODE HERE
-
+function greaterThan10(obj){
+  for (prop in obj){
+    if (obj[prop] > 10){
+      obj[prop] = 0;
+    }
+  }
+  return obj;
+}
 
 
 // ========================
@@ -51,7 +63,12 @@ function showValues( obj ) {
 // Write a function called double that takes in an object. Write a for in loop that loops over the object and changes every value to be itself multipled by 2. Return the updated object.
 
 // CODE HERE
-
+function double(obj){
+  for (prop in obj){
+    obj[prop] *= 2;
+  }
+  return obj;
+}
 
 
 // ========================
